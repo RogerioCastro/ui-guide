@@ -158,6 +158,10 @@ $ npm run build
 
 > O comando `npm run build` irá gerar os arquivos `ui-guide.min.js`, `ui-guide.min.js.map` e `ui-guide.min.js.LICENSE.txt` no diretório [`/dist`](/dist).
 
+## Créditos
+
+[Popper.js](https://popper.js.org/) - Biblioteca de posicionamento de *tooltips* e *popovers*.
+
 ## License
 
 MIT &copy; Rogério Castro
