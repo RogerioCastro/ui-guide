@@ -1,0 +1,28 @@
+.uig-highlight-box {
+  display: block;
+  position: absolute;
+  z-index: 9999998;
+  border-radius: 4px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-transition: all .3s ease-out;
+       -o-transition: all .3s ease-out;
+          transition: all .3s ease-out;
+  transform-origin: 50% 50%;
+  border: 1px solid #717171;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 10px 2px, rgba(26, 26, 26, 0.7) 0px 0px 0px 5000px;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+}
+
+.uig-highlight-box::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  box-shadow: inset 0px 0px 10px 2px #0000001c;
+}

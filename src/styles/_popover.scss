@@ -1,0 +1,143 @@
+.uig-popover {
+  background: #EDEDED;
+  color: #333;
+  padding: 0;
+  font-size: 1em;
+  border-radius: 4px;
+  z-index: 9999998;
+  display: none;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.4);
+  max-width: 350px;
+  .uig-popover-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+    .uig-popover-title {
+      font-weight: bold;
+      padding: 5px 15px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    .uig-popover-close {
+      text-decoration: none !important;
+      color: #868686;
+      padding: 5px;
+      height: 35px;
+      width: 35px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 35px;
+      min-height: 35px;
+      &:hover {
+        color: #000000;
+      }
+    }
+  }
+  .uig-popover-content {
+    padding: 5px 15px;
+  }
+  .uig-popover-progress {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 0;
+    display: none;
+    ul {
+      clear: both;
+      margin: 0 auto 0;
+      padding: 0;
+      display: inline-block;
+      -webkit-box-sizing: content-box;
+              box-sizing: content-box;
+      li {
+        list-style: none;
+        float: left;
+        margin: 0 2px;
+        -webkit-box-sizing: content-box;
+                box-sizing: content-box;
+        a {
+          display: block;
+          width: 6px;
+          height: 6px;
+          background: #ccc;
+          border-radius: 10px;
+          text-decoration: none;
+          cursor: pointer;
+          -webkit-transition: width .1s ease-in;
+               -o-transition: width .1s ease-in;
+                  transition: width .1s ease-in;
+          -webkit-box-sizing: content-box;
+                  box-sizing: content-box;
+          &.active, &:hover {
+            width: 15px;
+            background: #999;
+          }
+        }
+      }
+    }
+  }
+  .uig-popover-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    .uig-popover-button {
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      color: #4d4d4d;
+      padding: 3px 10px;
+      font-size: 14px;
+      &:hover {
+        color: #000000;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+      }
+      &:disabled {
+        color: #9c9c9c;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        opacity: 0.8;
+        &:hover {
+          color: #9c9c9c;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  .uig-popover-arrow {
+    &, &::before {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: inherit;
+    }
+    visibility: hidden;
+    &::before {
+      visibility: visible;
+      content: '';
+      transform: rotate(45deg);
+    }
+  }
+  &[data-show] {
+    display: block;
+  }
+  &[data-popper-placement^='top'] > .uig-popover-arrow {
+    bottom: -4px;
+  }
+  &[data-popper-placement^='bottom'] > .uig-popover-arrow {
+    top: -4px;
+  }
+  &[data-popper-placement^='left'] > .uig-popover-arrow {
+    right: -4px;
+  }
+  &[data-popper-placement^='right'] > .uig-popover-arrow {
+    left: -4px;
+  }
+  &[data-popper-reference-hidden] {
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
