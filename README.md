@@ -140,7 +140,7 @@ Quando uma classe for informada na opção `popoverClass`, esta será adicionada
 ```
 
 > O atributo `data-step-index` pode ser utilizado, em CSS, para customizar o estilo da *tooltip* ou elementos de passos específicos. Exemplo:
-`.custom-class[data-step-index-index='0'] { background-color: #FFF; }`
+`.custom-class[data-step-index='0'] { background-color: #FFF; }`
 
 ## Desenvolvimento
 
