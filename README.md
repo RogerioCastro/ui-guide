@@ -2,9 +2,9 @@
 
 Biblioteca para guiar o usuário pela interface de uma aplicação web (site). Pode ser utilizada como mecanismo de ajuda ou apresentação de elementos da interface.
 
-Inspirada nas bibliotecas [Intro.js](https://introjs.com/) e [Driver.js](https://github.com/kamranahmedse/driver.js).
-
 <p align="center"><img src="https://raw.githubusercontent.com/RogerioCastro/ui-guide/main/dist/assets/images/example.png"></p>
+
+Inspirada nas bibliotecas [Intro.js](https://introjs.com/) e [Driver.js](https://github.com/kamranahmedse/driver.js).
 
 Veja uma **demonstração** no diretório [`/dist`](/dist).
 
