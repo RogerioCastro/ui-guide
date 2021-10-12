@@ -164,6 +164,8 @@ $ npm run build
 
 [Popper.js](https://popper.js.org/) - Biblioteca de posicionamento de *tooltips* e *popovers*.
 
+[Free CSS](https://www.free-css.com/) - A página utilizada no exemplo é uma das templates gratuitas disponíveis no site.
+
 ## License
 
 MIT &copy; Rogério Castro
