@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link href="./assets/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="./assets/favicon.ico" rel="icon">
+
+
+
+  <title>UIGuide example</title>
+
+  <link href="./main.a3f694c0.css" rel="stylesheet">
+  <script src='./ui-guide.min.js'></script>
+  <style>
+    .popover-custom[data-step-index="0"],
+    .popover-custom[data-step-index="9"] {
+      background-color: #551493;
+      color: #FFF;
+    }
+    .popover-custom[data-step-index="0"] .uig-popover-header .uig-popover-close,
+    .popover-custom[data-step-index="9"] .uig-popover-header .uig-popover-close {
+      color: #a8a3e6;
+    }
+    .popover-custom[data-step-index="0"] .uig-popover-actions .uig-popover-button,
+    .popover-custom[data-step-index="9"] .uig-popover-actions .uig-popover-button {
+      border: 1px solid rgb(85, 20, 147);
+      background-color: #421271;
+      color: #a49fe1;
+    }
+    .popover-custom[data-step-index="0"] .uig-popover-actions .uig-popover-button:hover,
+    .popover-custom[data-step-index="9"] .uig-popover-actions .uig-popover-button:hover {
+      border: 1px solid rgb(255, 255, 255);
+    }
+    .popover-custom[data-step-index="0"] .uig-popover-actions .uig-popover-button:disabled,
+    .popover-custom[data-step-index="9"] .uig-popover-actions .uig-popover-button:disabled,
+    .popover-custom[data-step-index="0"] .uig-popover-actions .uig-popover-button:disabled:hover,
+    .popover-custom[data-step-index="9"] .uig-popover-actions .uig-popover-button:disabled:hover {
+      border: 1px solid rgb(85, 20, 147);
+      color: #59558a;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Add your content of header -->
+<header>
+  <nav class="navbar navbar-fixed-top navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="./index.html" title="">
+          <img src="./assets/images/mashuptemplate.svg" class="navbar-logo-img" alt="">
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
+        <ul id="main-navigation" class="nav navbar-nav navbar-right">
+          <li><a href="#" title="" class="active">Home</a></li>
+          <li><a href="#" title=""> About</a></li>
+          <li><a href="#" title=""> Pricing </a></li>
+          <li><a href="#" title="">Contact</a></li>
+          <li><a href="#" title="">Components</a></li>
+          <li>
+            <p>
+              <a href="#" class="btn btn-primary navbar-btn" title="">Download</a>
+            </p>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="white-text-container background-image-container" style="background-image: url('./assets/images/img-home.jpg')">
+    <div class="opacity"></div>
+    <div class="container">
+        <div class="row">
+
+            <div id="intro-container" class="col-md-6">
+                <h1>Posuere lorem Ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Adipiscing commodo elit at imperdiet dui accumsan sit. Ipsum dolor sit
+                    amet consectetur adipiscing elit. </p>
+                 <a onclick="uiguide.start()" title="" class="btn btn-lg btn-primary">Iniciar UIGuide</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="section-container border-section-container">
+    <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-container-spacer">
+                    <div class="text-center">
+                        <h2>Vivamus laoreet</h2>
+                        <p> Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing.<br> Porta non
+                            pulvinar neque laoreet. Viverra ipsum nunc aliquet bibendum. </p>
+                    </div>
+                </div>
+
+                <div id="terceiro-passo" class="col-md-4">
+                    <div class="fa-container">
+                        <i class="fa fa-comment-o fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <div class="text-center">
+                        <h3>Consectetur</h3>
+                    </div>
+                    <div>
+                        <p>Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Porta
+                            non pulvinar neque laoreet. Viverra ipsum nunc aliquet bibendum. Iaculis urna id volutpat lacus.
+                            Turpis egestas pretium aenean pharetra magna ac.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="fa-container">
+                        <i class="fa fa-heart-o fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <div class="text-center">
+                        <h3>Malesuada</h3>
+                    </div>
+                    <div>
+                        <p>Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Porta
+                            non pulvinar neque laoreet. Viverra ipsum nunc aliquet bibendum. Iaculis urna id volutpat lacus.
+                            Turpis egestas pretium aenean pharetra magna ac.
+                        </p>
+                    </div>
+                </div>
+                <div id="segundo-passo" class="col-md-4">
+                    <div class="fa-container">
+                        <i class="fa fa-bell-o fa-3x" aria-hidden="true"></i>
+                    </div>
+                    <div class="text-center">
+                        <h3>Phasellus</h3>
+                    </div>
+                    <div>
+                        <p>Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Porta
+                            non pulvinar neque laoreet. Viverra ipsum nunc aliquet bibendum. Iaculis urna id volutpat lacus.
+                            Turpis egestas pretium aenean pharetra magna ac.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+</div>
+
+<div class="section-container">
+    <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img class="img-responsive" src="./assets/images/img-05.jpg" alt="First slide">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" src="./assets/images/img-07.jpg" alt="Second slide">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" src="./assets/images/img-05.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+</div>
+
+
+<div class="section-container background-color-container white-text-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="text-center">
+                    <h2>Vivamus laoreet</h2>
+                    <p> Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Porta non
+                        pulvinar neque laoreet. Viverra ipsum nunc aliquet bibendum. Iaculis urna id volutpat lacus. Turpis
+                        egestas pretium aenean pharetra magna ac. Id cursus metus aliquam eleifend mi. </p>
+                    <a href="./download.html" title="" class="btn btn-primary btn-lg">Download</a>
+                </div>
+            </div>
+        </div>
+     </div>
+ </div>
+
+ <div class="section-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <img id="quinto-passo" class="img-responsive" src="./assets/images/img-06.png" alt="">
+            </div>
+            <div class="col-md-5">
+                <ul class="features">
+                    <li id="quarto-passo">
+                        <h3>Dui augue</h3>
+                        <p>Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Malesuada</h3>
+                        <p>Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Bibendum</h3>
+                        <p>Auctor augue mauris augue neque. Posuere lorem ipsum dolor sit amet consectetur adipiscing.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="parceiros-passo" class="row">
+          <div class="col-md-4">
+                  <img class="img-responsive page-base-image" src="./assets/images/logo-01.png" alt="">
+          </div>
+          <div class="col-md-4">
+                  <img class="img-responsive page-base-image" src="./assets/images/logo-02.png" alt="">
+          </div>
+          <div class="col-md-4">
+                  <img class="img-responsive page-base-image" src="./assets/images/logo-03.png" alt="">
+          </div>
+      </div>
+    </div>
+</div>
+
+<footer>
+    <div class="section-container footer-container">
+        <div class="container">
+            <div class="row">
+                    <div id="about-passo" class="col-md-4">
+                        <h4>About us</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet consectetur dolor</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Do you like ? Share this !</h4>
+                        <p>
+                            <a href="https://facebook.com/" class="social-round-icon white-round-icon fa-icon" title="">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://twitter.com/" class="social-round-icon white-round-icon fa-icon" title="">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://www.linkedin.com/" class="social-round-icon white-round-icon fa-icon" title="">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                          </a>
+                        </p>
+                        <p><small>© Untitled | Website created with <a href="http://www.mashup-template.com/" class="link-like-text" title="Create website with free html template">Mashup Template</a>/<a href="http://www.unsplash.com/" class="link-like-text" title="Beautiful Free Images">Unsplash</a></small></p>
+                    </div>
+                    <div id="subscribe-passo" class="col-md-4">
+                        <h4>Subscribe to newsletter</h4>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control footer-input-text">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-primary btn-newsletter ">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+  const uiguide = UIGuide({
+    popoverClass: 'popover-custom',
+    steps: [
+      {
+        title: 'Demonstração UIGuide',
+        content: `
+            <div>
+                <p>
+                  <strong>UIGuide</strong> é uma biblioteca para apresentação dos elementos de
+                  interface de uma aplicação web passo-a-passo.
+                </p>
+                <p>
+                  Utilize os botões de navegação <strong>Anterior</strong> e <strong>Próximo</strong> para
+                  retroceder ou avançar na apresentação ou clique nos pontos da barra de progresso abaixo e
+                  vá direto para o passo desejado.
+                </p>
+                <p style="border: 1px solid #ccc;border-radius: 5px;padding: 0 10px;">
+                  A página utilizada nesse exemplo é uma das templates gratuitas disponíveis em
+                  <a href="https://www.free-css.com/" target="_blank">Free CSS</a>.
+                </p>
+            </div>
+        `,
+      },
+      {
+        target: 'main-navigation',
+        title: 'Elementos fixos',
+        content: `
+        <div>
+          É possível destacar elementos fixos da página. Role a página para ver.
+        </div>
+        `,
+      },
+      {
+        target: 'intro-container',
+        title: 'Posicionamento',
+        content: '<div>Configure a posição da <em>tooltip</em> para cada passo e melhore a apresentação.</div>',
+        position: 'right'
+      },
+      {
+        area: {
+          // top: (document.documentElement.clientHeight / 2) - 50,
+          top: 110,
+          left: document.documentElement.clientWidth / 2,
+          width: (document.documentElement.clientWidth / 2) - 50,
+          height: document.documentElement.clientHeight - 250
+        },
+        title: 'Área arbitrária',
+        content: `
+        <div>
+          Na falta ou impossibilidade de informar um elemento alvo, informe os dados da área a ser destacada.
+        </div>
+        `,
+        position: 'left'
+      },
+      {
+        target: 'segundo-passo',
+        title: 'Rolagem suave',
+        content: `
+        <div>
+          Rolagem suave para os elementos a serem destacados e centralização vertical.
+        </div>
+        `,
+        position: 'left'
+      },
+      {
+        target: 'terceiro-passo',
+        title: 'Responsividade',
+        content: `
+            <div>
+              Quando a <em>tooltip</em> estiver configurada para uma das laterais, esquerda ou direita,
+              ela será redirecionada para a parte superior ou inferior de acordo com o tamanho da tela
+              no momento que o passo é exibido.
+            </div>
+        `,
+        position: 'right'
+      },
+      {
+        target: 'quarto-passo',
+        title: '⚠ Utilize HTML!',
+        content: `
+            <div>
+              <div style="text-align: center;margin: 10px;">
+                <img src="./assets/images/mashuptemplate.svg" class="navbar-logo-img" alt="">
+              </div>
+              <hr style="border: 1px solid #9d9898;margin: 5px 0;">
+              HTML pode ser utilizado tanto para o <strong>título</strong> quanto para o
+              <strong>conteúdo</strong> da <em>tooltip</em>.
+            </div>
+        `,
+        position: 'left'
+      },
+      {
+        target: 'quinto-passo',
+        title: 'Já deu por hoje?',
+        content: `
+            <div>
+              Encerre a apresentação a qualquer momento clicando na área escurecida ao redor ou no
+              ícone <strong>X</strong> na parte superior da <em>tooltip</em>.
+            </div>
+        `,
+        position: 'left'
+      },
+      {
+        target: 'parceiros-passo',
+        title: 'Livre!',
+        content: `
+            <div>
+              <div style="text-align: center;margin: 10px;">
+                <img src="./assets/images/open-source.png" style="max-width: 80px; float: left;">
+                Essa é uma biblioteca de código aberto sob uma licença MIT.
+              </div>
+            </div>
+        `
+      },
+      {
+        title: 'É isso!',
+        content: `
+            <div>
+                <p>Baixe a biblioteca ou clone o projeto e utilize como quiser.</p>
+            </div>
+        `
+      }
+    ],
+    onStart: (step, stepIndex) => {
+      // console.info('onStart =>', step, stepIndex)
+    },
+    onStep: (step, stepIndex) => {
+      // console.info('onStep =>', step, stepIndex)
+    },
+    onStop: (step, stepIndex) => {
+      // console.info('onStop =>', step, stepIndex)
+      // Verificando se é o último passo e retornando ao topo da página
+      if (stepIndex === uiguide.steps[uiguide.steps.length - 1].id) {
+        window.scrollTo(0, 0)
+      }
+    }
+  })
+  // uiguide.start()
+</script>
+
+</html>
